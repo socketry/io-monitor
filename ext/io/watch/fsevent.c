@@ -44,6 +44,7 @@ void IO_Watch_FSEvent_callback(
 	const FSEventStreamEventFlags eventFlags[],
 	const FSEventStreamEventId eventIds[]) {
 	
+	(void)streamRef; // unused
 	const char **eventPaths = (const char**)eventData;
 	struct IO_Watch *watch = context;
 	
