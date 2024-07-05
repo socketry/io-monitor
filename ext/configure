@@ -43,7 +43,7 @@ esac
 cat > Makefile <<EOF
 TARGET = io-watch
 CC = $CC
-CFLAGS = -Wall -Wextra
+CFLAGS = -Wall -Wextra -Werror
 LDFLAGS = $LDFLAGS
 SOURCES = $SOURCES
 OBJECTS = \$(SOURCES:.c=.o)
